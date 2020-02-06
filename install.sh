@@ -38,8 +38,7 @@ PS3="Seleccione una opcion: "
 choices=("Yes" "No")
 select choice in "${choices[@]}"; do
         case $choice in
-                yes)
-
+                Yes)
 					echo "Instalando Golang"
 					wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
 					sudo tar -xvf go1.13.4.linux-amd64.tar.gz
@@ -54,7 +53,7 @@ select choice in "${choices[@]}"; do
 					sleep 1
 					break
 					;;
-				no)
+				No)
 					echo "Por favor instale Go y corra nuevamente el Script"
 					echo "Abortando instalacion..."
 					exit 1
